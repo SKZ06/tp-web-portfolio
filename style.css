@@ -8,8 +8,8 @@ nav a {
 }
 
 nav {
-  
   display: flex;
+  justify-content: space-around;
   
 }
 nav a:hover {
