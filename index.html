@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   
 
-    <nav>
-        <ul>
-        <li><a href="#github">github</a></li>
-        <li><a href="#linkedin">Linkedin</a></li>
-        <li><a href="#instagram">instagram</a></li>
-        <li><a href="#youtube">youtube</a></li>
-        <li><a href="#facebook">facebook</a></li>
-        </ul>
-    </nav>
+  <div class="card">
 
-    
-        <div class="card">
-           <h1>Mon Portfolio</h1>
-            <p>Bienvenue sur mon portfolio en ligne. Découvrez mes projets, compétences et expériences professionnelles.</p>
+    <div class="tabs">
+      <button class="tab active" data-tab="login">Sign In</button>
+      <button class="tab" data-tab="register">Create Account</button>
+    </div>
 
-        </div>
-     
-     
+    <!-- LOGIN -->
+    <div class="panel active" id="login">
+      <h2>Sign In</h2>
+      <label>Email</label>
+      <input id="l-email" type="email" placeholder="you@example.com"/>
+      <label>Password</label>
+      <input id="l-pass" type="password" placeholder="Password"/>
+      <button class="btn" onclick="login()">Sign In</button>
+    </div>
 
+    <!-- REGISTER -->
+    <div class="panel" id="register">
+      <h2>Create Account</h2>
+      <label>Name</label>
+      <input id="r-name" type="text" placeholder="Your name"/>
+      <label>Email</label>
+      <input id="r-email" type="email" placeholder="you@example.com"/>
+      <label>Password</label>
+      <input id="r-pass" type="password" placeholder="Min. 8 characters"/>
+      <button class="btn" onclick="register()">Create Account</button>
+    </div>
 
+    <p class="msg" id="msg"></p>
 
+  </div>
 
-
-
-
-
+  <script src="script.js"></script>
 </body>
 </html>
