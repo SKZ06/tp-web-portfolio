@@ -3,49 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sign In</title>
+  <title>Coffee Arts - Connexion</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-  <div class="card">
-
-    <div class="tabs">
-      <button class="tab active" data-tab="login">Sign In</button>
-      <button class="tab" data-tab="register">Create Account</button>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav nav-left">
+        <a href="#">Café</a>
+        <a href="#">Céramique</a>
+        <a href="#">Boutique</a>
+        <a href="#">Événements</a>
+      </nav>
+      <img src="logo.svg" alt="Coffee Arts" class="logo-img"/>
+      <nav class="nav nav-right">
+        <a href="#">Blog</a>
+        <a href="#">Nos engagements</a>
+        <a href="#">Contact</a>
+        <a href="#">Espace client</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- LOGIN -->
-    <div class="panel active" id="login">
-      <h2>Sign In</h2>
-      <label>Email</label>
-      <input id="l-email" type="email" placeholder="you@example.com"/>
-      <label>Password</label>
-      <div class="password-field">
-        <input id="l-pass" type="password" placeholder="Password"/>
-        <button type="button" class="eye-btn" onclick="togglePassword('l-pass')">👁️</button>
-      </div>
-      <button class="btn" onclick="login()">Sign In</button>
-    </div>  
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container">
+      <div class="auth-section">
+        <!-- FORM -->
+        <div class="form-section">
+          <div class="tabs">
+            <button class="tab active" data-tab="login">Connexion</button>
+            <button class="tab" data-tab="register">Inscription</button>
+          </div>
 
-    <!-- REGISTER -->
-    <div class="panel" id="register">
-      <h2>Create Account</h2>
-      <label>Name</label>
-      <input id="r-name" type="text" placeholder="Your name"/>
-      <label>Email</label>
-      <input id="r-email" type="email" placeholder="you@example.com"/>
-      <label>Password</label>
-      <div class="password-field">
-        <input id="r-pass" type="password" placeholder="Min. 8 characters"/>
-        <button type="button" class="eye-btn" onclick="togglePassword('r-pass')">👁️</button>
+          <!-- LOGIN -->
+          <div class="panel active" id="login">
+            <form onsubmit="login(event)">
+              <label>Email</label>
+              <input id="l-email" type="email" placeholder="votre@email.com" required/>
+              
+              <label>Mot de passe</label>
+              <div class="password-field">
+                <input id="l-pass" type="password" placeholder="Mot de passe" required/>
+                <button type="button" class="eye-btn" onclick="togglePassword('l-pass')">👁️</button>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>
+
+            <p class="footer-text">Pas encore de compte ? <a href="#" class="link" onclick="switchTab('register', event)">S'inscrire</a></p>
+          </div>
+
+          <!-- REGISTER -->
+          <div class="panel" id="register">
+            <form onsubmit="register(event)">
+              <label>Nom</label>
+              <input id="r-name" type="text" placeholder="Votre nom" required/>
+              
+              <label>Email</label>
+              <input id="r-email" type="email" placeholder="votre@email.com" required/>
+              
+              <label>Mot de passe</label>
+              <div class="password-field">
+                <input id="r-pass" type="password" placeholder="Min. 8 caractères" required/>
+                <button type="button" class="eye-btn" onclick="togglePassword('r-pass')">👁️</button>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Créer un compte</button>
+            </form>
+
+            <p class="footer-text">Vous avez déjà un compte ? <a href="#" class="link" onclick="switchTab('login', event)">Se connecter</a></p>
+          </div>
+
+          <p class="msg" id="msg"></p>
+        </div>
       </div>
-      <button class="btn" onclick="register()">Create Account</button>
     </div>
+  </main>
 
-    <p class="msg" id="msg"></p>
-
-  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>07.66.91.82.94</p>
+          <p>coffeeartsparis@gmail.com</p>
+          <p>25 Boulevard du Temple<br>75003 Paris</p>
+        </div>
+        <div class="footer-col">
+          <h4>Horaires</h4>
+          <p>Mardi - Vendredi: 08h - 20h</p>
+          <p>Samedi - Dimanche: 10h - 21h</p>
+          <p>Lundi: Fermé</p>
+        </div>
+        <div class="footer-col">
+          <h4>Paiements</h4>
+          <p>💳 Visa</p>
+          <p>💳 Mastercard</p>
+          <p>💳 Google Pay</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Coffee Arts Paris. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+          <a href="#">Mentions légales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

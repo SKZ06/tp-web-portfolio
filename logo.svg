@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" width="700" height="850">
+  <!-- Coffee cup and ceramics arrangement -->
+  <!-- Cup -->
+  <path d="M 80 90 Q 60 120 80 200 L 220 200 Q 240 120 220 90 Z" fill="#556B4D" stroke="#556B4D" stroke-width="2"/>
+  <ellipse cx="150" cy="90" rx="70" ry="20" fill="#556B4D"/>
+  <path d="M 215 120 Q 240 130 245 160 Q 240 170 215 160 Z" fill="#556B4D"/>
+  
+  <!-- Center vase -->
+  <path d="M 320 30 Q 300 50 295 120 L 335 180 L 375 180 L 370 120 Q 365 50 345 30 Z" fill="#556B4D" stroke="#556B4D" stroke-width="2"/>
+  <ellipse cx="335" cy="30" rx="25" ry="15" fill="#556B4D"/>
+  <path d="M 290 120 Q 275 140 280 160 Q 300 170 310 150 Z" fill="#556B4D"/>
+  <path d="M 380 120 Q 395 140 390 160 Q 370 170 360 150 Z" fill="#556B4D"/>
+  <!-- Plate under center vase -->
+  <ellipse cx="335" cy="195" rx="95" ry="25" fill="none" stroke="#556B4D" stroke-width="3"/>
+  <ellipse cx="335" cy="190" rx="85" ry="20" fill="none" stroke="#556B4D" stroke-width="2"/>
+  
+  <!-- Right bottle -->
+  <path d="M 520 10 Q 500 30 500 100 L 510 180 Q 515 200 530 210 L 545 200 Q 550 180 555 100 Q 555 30 535 10 Z" fill="#556B4D" stroke="#556B4D" stroke-width="2"/>
+  <ellipse cx="527.5" cy="10" rx="17.5" ry="12" fill="#556B4D"/>
+  
+  <!-- Bottom left vase -->
+  <path d="M 110 280 Q 85 300 85 370 Q 85 400 110 420 L 200 420 Q 225 400 225 370 Q 225 300 200 280 Z" fill="#556B4D" stroke="#556B4D" stroke-width="2"/>
+  <ellipse cx="155" cy="280" rx="45" ry="25" fill="#556B4D"/>
+  
+  <!-- Bottom center whisk -->
+  <path d="M 320 300 Q 310 310 310 380 L 350 420 Q 355 430 360 440 L 340 450 Q 335 440 330 430 L 290 390 Q 285 340 295 300 Z" fill="none" stroke="#556B4D" stroke-width="8" stroke-linecap="round"/>
+  <!-- Whisk details -->
+  <line x1="310" y1="320" x2="300" y2="340" stroke="#556B4D" stroke-width="3"/>
+  <line x1="320" y1="315" x2="305" y2="350" stroke="#556B4D" stroke-width="3"/>
+  <line x1="330" y1="315" x2="310" y2="360" stroke="#556B4D" stroke-width="3"/>
+  <line x1="340" y1="320" x2="315" y2="370" stroke="#556B4D" stroke-width="3"/>
+  
+  <!-- Bottom right jar -->
+  <path d="M 480 300 Q 455 320 450 380 Q 450 410 475 430 L 575 430 Q 600 410 600 380 Q 595 320 570 300 Z" fill="#556B4D" stroke="#556B4D" stroke-width="2"/>
+  <ellipse cx="525" cy="300" rx="50" ry="30" fill="#556B4D"/>
+  
+  <!-- Text: Coffee Arts -->
+  <text x="350" y="550" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#556B4D">Coffee Arts</text>
+  
+  <!-- Text: Paris -->
+  <text x="350" y="700" font-family="Arial, sans-serif" font-size="80" text-anchor="middle" fill="#999999">Paris</text>
+</svg>
