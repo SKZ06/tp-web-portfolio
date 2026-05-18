@@ -21,9 +21,12 @@
       <label>Email</label>
       <input id="l-email" type="email" placeholder="you@example.com"/>
       <label>Password</label>
-      <input id="l-pass" type="password" placeholder="Password"/>
+      <div class="password-field">
+        <input id="l-pass" type="password" placeholder="Password"/>
+        <button type="button" class="eye-btn" onclick="togglePassword('l-pass')">👁️</button>
+      </div>
       <button class="btn" onclick="login()">Sign In</button>
-    </div>
+    </div>  
 
     <!-- REGISTER -->
     <div class="panel" id="register">
@@ -33,7 +36,10 @@
       <label>Email</label>
       <input id="r-email" type="email" placeholder="you@example.com"/>
       <label>Password</label>
-      <input id="r-pass" type="password" placeholder="Min. 8 characters"/>
+      <div class="password-field">
+        <input id="r-pass" type="password" placeholder="Min. 8 characters"/>
+        <button type="button" class="eye-btn" onclick="togglePassword('r-pass')">👁️</button>
+      </div>
       <button class="btn" onclick="register()">Create Account</button>
     </div>
 

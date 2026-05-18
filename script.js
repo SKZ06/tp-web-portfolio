@@ -67,3 +67,17 @@ function login() {
 
   msg(`✓ Welcome back, ${user.name}!`);
 }
+
+// Toggle password visibility
+function togglePassword(fieldId) {
+  const field = document.getElementById(fieldId);
+  const btn = event.target;
+  
+  if (field.type === "password") {
+    field.type = "text";
+    btn.textContent = "🙈";
+  } else {
+    field.type = "password";
+    btn.textContent = "👁️";
+  }
+}
